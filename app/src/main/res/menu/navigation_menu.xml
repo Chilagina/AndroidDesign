@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/template"
+        android:title="TEMPLATE"
+        android:icon="@drawable/abc_vector_test"/>
+
+    <item
+        android:id="@+id/layoutxml"
+        android:title="XML"
+        android:icon="@drawable/ic_folder_black_24dp"/>
+
+    <item
+        android:id= "@+id/colors"
+        android:title ="COLORS/DRAWABLES"
+        android:icon="@drawable/ic_color_lens_black_24dp"/>
+
+
+</menu>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteish"
+    android:orientation="vertical"
+    tools:context=".LoginTwo">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:background="@drawable/blue_rounded_title"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_toLeftOf="@+id/welcome_text"
+            app:srcCompat="@drawable/logoone" />
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text=" Title Text"
+            android:textColor="@color/whiteish"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-condensed-medium" />
+
+
+    </RelativeLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <EditText
+          android:id="@+id/emailText"
+          android:layout_width="250dp"
+          android:layout_height="40dp"
+          android:layout_marginTop="30dp"
+          android:layout_gravity="center"
+          android:hint="Email"
+          android:inputType="textEmailAddress"
+          android:textColor="@color/bluish"
+          android:textColorHighlight="@color/bluish"
+          android:textColorHint="@color/bluish"
+          android:textColorLink="@color/colorPrimaryDark"
+          android:textCursorDrawable="@color/bluish"
+          app:fontFamily="sans-serif-condensed-medium"/>
+
+      <EditText
+          android:id="@+id/passwordText"
+          android:layout_width="250dp"
+          android:layout_height="40dp"
+          android:layout_marginTop="20dp"
+          android:layout_gravity="center"
+          android:hint="Password"
+          android:inputType="textPassword"
+          android:textColor="@color/bluish"
+          android:textColorHighlight="@color/bluish"
+          android:textColorHint="@color/bluish"
+          android:textColorLink="@color/colorPrimaryDark"
+          android:textCursorDrawable="@color/bluish"
+          app:fontFamily="sans-serif-condensed-medium"/>
+
+      <Button
+          android:id="@+id/loginButton"
+          android:layout_width="250dp"
+          android:layout_height="50dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="30dp"
+          android:background="@drawable/blue_rounded_buttons"
+          android:text="Login"
+          android:textColor="@color/whiteish"
+          android:textSize="16sp"
+          android:textStyle="bold|italic"
+          app:fontFamily="sans-serif-condensed-medium" />
+
+      <TextView
+          android:id="@+id/orTxt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:text="Don't have an account? Click Register"
+          android:textColor="@color/bluish"
+          android:textSize="12sp"
+          android:textStyle="bold"
+          app:fontFamily="sans-serif-condensed-medium"/>
+
+      <Button
+          android:id="@+id/registerButton1"
+          android:layout_width="250dp"
+          android:layout_height="50dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/pink_rounded_buttons"
+          android:text="Register"
+          android:textColor="@color/whiteish"
+          android:textSize="16sp"
+          android:textStyle="bold|italic"
+          app:fontFamily="sans-serif-condensed-medium"/>
+
+      <com.google.android.material.bottomnavigation.BottomNavigationView
+          android:id="@+id/bottomNavigation"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40dp"
+          android:background="@color/bluish"
+          app:itemBackground="@color/bluish"
+          app:itemIconTint="@color/whiteish"
+          app:itemTextColor="@color/whiteish"
+          app:menu="@menu/navigation_menu" />
+
+  </LinearLayout>
+
+  </LinearLayout>
+
+

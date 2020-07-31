@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileOptions"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/gradientbackgroundpurple"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+        <ImageView
+            android:id="@+id/logoImage2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/profilelogo" />
+
+
+        <TextView
+            android:id="@+id/materialDesignText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoImage2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=" Profile Page Designs"
+            android:textColor="@color/smoke"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/materialDesignText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Profile Page Resource Files"
+            android:textColor="@color/smoke"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:scrollbarThumbHorizontal="@color/whiteish"
+        android:scrollbarThumbVertical="@color/whiteish">
+
+        <Button
+            android:id="@+id/templateOneButton"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/gradientbackgroundtwo"
+            android:onClick="buttonFirstProfileOnClick"
+            android:text="Classic Profile Template"
+            android:textColor="@color/smoke"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/templateTwoButton"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/templateOneButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gradientbackgroundtwo"
+            android:onClick="buttonSecondProfileOnClick"
+            android:text="Retro Profile Template"
+            android:textColor="@color/smoke"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/templateThreeButton"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/templateTwoButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gradientbackgroundtwo"
+            android:onClick="buttonThreeProfileOnClick"
+            android:text="Modern Profile Template"
+            android:textColor="@color/smoke"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

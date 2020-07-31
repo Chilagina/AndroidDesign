@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/gradientbackgroundtwo"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="140dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/logoone" />
+
+        <TextView
+            android:id="@+id/materialDesignText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=" Android Material Design"
+            android:textColor="@color/smoke"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/materialDesignText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Simple and Clean XML Templates"
+            android:textColor="@color/smoke"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            android:scrollbarThumbHorizontal="@color/smoke"
+            android:scrollbarThumbVertical="@color/smoke">
+
+            <TextView
+                android:id="@+id/directionsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:text= " To learn how to apply custom colors, buttons, and logos before gettting started, click 'Tutorials' tab at the bottom of the page."
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:id="@+id/loginLogo"
+                android:layout_width="90dp"
+                android:layout_height="75dp"
+                android:layout_below="@id/directionsText"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/smoke"
+                app:srcCompat="@drawable/loginlogo" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_below="@id/directionsText"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/loginLogo"
+                android:background="@drawable/gradientbackgroundpurple"
+                android:onClick="buttonCreateLoginOnClick"
+                android:text="Login Page Templates"
+                android:textColor="@color/smoke"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/profileLogo"
+                android:layout_width="90dp"
+                android:layout_height="75dp"
+                android:layout_below="@id/loginLogo"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/smoke"
+                app:srcCompat="@drawable/profilelogo" />
+
+            <Button
+                android:id="@+id/profileButton"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_below="@id/loginButton"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/profileLogo"
+                android:background="@drawable/gradientbackgroundpurple"
+                android:onClick="buttonCreateProfileOnClick"
+                android:text="Profile Page Templates"
+                android:textColor="@color/smoke"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/cardviewLogo"
+                android:layout_width="90dp"
+                android:layout_height="75dp"
+                android:layout_below="@id/profileLogo"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/smoke"
+                app:srcCompat="@drawable/cardviewlogo" />
+
+            <Button
+                android:id="@+id/cardviewButton"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_below="@id/profileButton"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/profileLogo"
+                android:background="@drawable/gradientbackgroundpurple"
+                android:onClick="buttonCardViewClick"
+                android:text="CardView Templates"
+                android:textColor="@color/smoke"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/customListLogo"
+                android:layout_width="90dp"
+                android:layout_height="75dp"
+                android:layout_below="@id/cardviewLogo"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/smoke"
+                app:srcCompat="@drawable/customlistlogo" />
+
+            <Button
+                android:id="@+id/customListButton"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_below="@id/cardviewButton"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/profileLogo"
+                android:background="@drawable/gradientbackgroundpurple"
+                android:onClick="buttonListViewOnClick"
+                android:text="Custom ListView Templates"
+                android:textColor="@color/smoke"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/drawableLogo"
+                android:layout_width="90dp"
+                android:layout_height="75dp"
+                android:layout_below="@id/customListLogo"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/smoke"
+                app:srcCompat="@drawable/customcolorslogo" />
+
+            <Button
+                android:id="@+id/drawableButton"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_below="@id/customListButton"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/profileLogo"
+                android:background="@drawable/gradientbackgroundpurple"
+                android:onClick="buttonAddColorOnClick"
+                android:text="Tutorials: Custom colors, buttons, logos"
+                android:textColor="@color/smoke"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

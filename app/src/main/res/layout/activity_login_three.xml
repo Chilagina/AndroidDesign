@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/purplesky"
+    android:orientation="vertical"
+    tools:context=".LoginThree">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="90dp"
+        android:text="Title Text"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/titleText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="3dp"
+        android:textColor="@color/whiteish"
+        android:textColorHint="@color/whiteish"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/emailText"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="3dp"
+        android:textColor="@color/whiteish"
+        android:textColorHint="@color/whiteish" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/passwordText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/blue_rounded_buttons"
+        android:text="Login"
+        android:textColor="@color/whiteish"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/orText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:text="Don't have an account? Click register"
+        android:textColor="@color/whiteish"
+        android:textSize="12sp"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/orText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/pink_rounded_buttons"
+        android:text="Register"
+        android:textColor="@color/whiteish"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@color/bluish"
+        app:itemBackground="@color/bluish"
+        app:itemIconTint="@color/whiteish"
+        app:itemTextColor="@color/whiteish"
+        app:menu="@menu/navigation_menu" />
+
+
+</LinearLayout>
